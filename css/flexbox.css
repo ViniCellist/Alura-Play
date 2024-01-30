@@ -21,7 +21,7 @@
 }
 
 .videos__item {
-    flex-grow: 1;
+    flex-grow: 0;
     height: 303px;
     width: 300px;
 }
