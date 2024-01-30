@@ -71,18 +71,25 @@
       "id": 10
     },
     {
-      "titulo": "Educação coorporativa",
-      "descricao": "4 mil visualizações",
-      "url": "https://www.youtube.com/embed/IGFSiBJIXFQ",
-      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "titulo": "Como criar um projeto em React e Typescript do zero para seu Portfólio Dev?",
+      "descricao": "1.3 mil visualizações",
+      "url": "https://www.youtube.com/embed/NpS2PksdMCc?si=eiUIGWGiD2HKejAH",
+      "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
       "id": 11
     },
     {
-      "titulo": "Educação coorporativa",
-      "descricao": "7 mil visualizações",
-      "url": "https://www.youtube.com/embed/IGFSiBJIXFQ",
-      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "titulo": "O que você precisa saber para começar em DevOps com Leonardo Sartorello | #HipstersPontoTube",
+      "descricao": "49 mil visualizações",
+      "url": "https://www.youtube.com/embed/IQ8-_khQATQ?si=dLW1cvzotxqJP9Oz",
+      "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
       "id": 12
+    },
+    {
+      "titulo": "Como usar o TLDraw? Escreva CÓDIGOS com DESENHOS!",
+      "descricao": "1.7 mil visualizações",
+      "url": "https://www.youtube.com/embed/ms-DTT4n_pw?si=t9gs-jDlY3Eu0s3B",
+      "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
+      "id": 13
     }
   ]
 }
