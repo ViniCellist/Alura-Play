@@ -1,16 +1,16 @@
-import { connectAPI } from "./connectAPI.js";
+import { listVideos } from "./connectAPI.js";
 
-const list = document.querySelector('[data-lista]');
+const list = document.querySelector('.videos__container');
 
-function buildCard() {
+function buildCard(titulo, descricao, url, imagem) {
     const video = document.createElement('li');
     video.className = "videos__item";
     video.innerHTML = `
         <iframe 
             width="100%" 
             height="72%" 
-            src="https://www. youtube.com/embed/YhnNOTde2I0"
-            title="Mercado de Trabalho | Desmistificando Mobile - Episódio 5" 
+            src="${url}"
+            title="${titulo}" 
             frameborder="0"
             allow="accelerometer; 
                     autoplay; 
@@ -21,15 +21,19 @@ function buildCard() {
                     allowfullscreen>
         </iframe>
         <div class="descricao-video">
-            <img src="./img/logo.png" alt="logo canal alura">
-            <h3>Mercado de Trabalho | Desmistificando Mobile...</h3>
-            <p>1,1 mil visualizações</p>
+            <img src="${imagem}" alt="logo canal alura">
+            <h3>${titulo}</h3>
+            <p>${descricao}</p>
         </div>
-    `
+    `;
 
     return video;
 };
 
 async function listVideo() {
-    const list = await connectAPI.listVideos();
-}
+    const listAPI = await listVideos();
+    listAPI.forEach(element => list.appendChild(
+        buildCard(element.titulo, element.descricao, element.url, element.imagem)));
+};
+
+listVideo();
