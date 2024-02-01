@@ -1,11 +1,10 @@
-export async function listVideos() {
-    const conection = await fetch("http://localhost:3000/videos");
-    const convert = await conection.json();
-
+export async function listVideosEx() {
+    const connection = await fetch("http://localhost:3000/videos");
+    const convert = await connection.json();
     return convert;
 };
 
-export async function createVideo(titulo, descricao, url, imagem) {
+export async function createVideoEx(titulo, descricao, url, imagem) {
     const connection = await fetch("http://localhost:3000/videos", {
         method: "POST",
         headers: {
@@ -22,4 +21,10 @@ export async function createVideo(titulo, descricao, url, imagem) {
     const convertedConnection = await connection.json();
     return convertedConnection;
 
+};
+
+export async function searchVideoEx(term) {
+    const connection = await fetch(`http://localhost:3000/videos?q=${term}`);
+    const convert = await connection.json();
+    return convert;
 };
