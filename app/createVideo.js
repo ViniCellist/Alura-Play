@@ -1,4 +1,4 @@
-import { createVideo } from "./connectAPI.js";
+import { createVideoEx } from "./connectAPI.js";
 
 const form = document.querySelector('[data-formulario]');
 
@@ -10,7 +10,7 @@ async function createVideos(event) {
     const titulo = document.querySelector('[data-titulo]').value;
     const descricao = Math.floor(Math.random() * 10).toString();
 
-   await createVideo(titulo, descricao, url, imagem);
+   await createVideoEx(titulo, descricao, url, imagem);
 
    window.location.href = "../pages/envio-concluido.html";
 }
