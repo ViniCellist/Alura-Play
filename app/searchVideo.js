@@ -14,6 +14,10 @@ async function searchVideos(event) {
 
     search.forEach(element => list.appendChild(
         buildCard(element.titulo, element.descricao, element.url, element.imagem)))
+
+    if (search.lenght == 0) {
+        alert("Sem vídeos com essa busca")
+    }
 };
 
 const searchBtn = document.querySelector("[data-btn-search]");
