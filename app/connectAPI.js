@@ -18,6 +18,10 @@ export async function createVideoEx(titulo, descricao, url, imagem) {
         })
     });
 
+    if (!connection.ok) {
+        throw new Erros("Não foi possível enviar o vídeo");
+    }
+
     const convertedConnection = await connection.json();
     return convertedConnection;
 
